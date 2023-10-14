@@ -31,4 +31,7 @@ public class Pesce {
     public Object clone() throws InvalidParameterException {
         return new Pesce(this.id, this.nome, this.colore);
     }
+    public String toString(){
+        return "{\"id\":" + this.id + ", \"nome\": \"" + this.nome + "\", \"colore\": \"" + this.colore + "\"}";
+    }
 }
