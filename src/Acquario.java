@@ -37,4 +37,15 @@ public class Acquario {
             this.pesci[x] = (Pesce) pesci[x].clone();
         }
     }
+    public Pesce getPesce(int id){
+        Pesce cp = null;
+        int x = 0, exit = 0;
+        while(exit == 0){
+            if(this.pesci[x].getId() == id){
+                cp = (Pesce) this.pesci[x].clone();
+            }
+            x++;
+        }
+        return cp;
+    }
 }

@@ -22,6 +22,9 @@ public class Pesce {
             throw new InvalidParameterException("colore must can't be empty");
         }
     }
+    public int getId(){
+        return this.id;
+    }
     public String getNome(){
         return this.nome;
     }
