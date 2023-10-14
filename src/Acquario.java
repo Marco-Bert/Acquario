@@ -31,5 +31,10 @@ public class Acquario {
         }
         return cp;
     }
-    
+    public void setPesci(Pesce[] pesci){
+        this.pesci = new Pesce[pesci.length];
+        for(int x = 0; x < pesci.length; x++){
+            this.pesci[x] = (Pesce) pesci[x].clone();
+        }
+    }
 }
