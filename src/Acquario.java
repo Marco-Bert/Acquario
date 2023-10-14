@@ -21,4 +21,7 @@ public class Acquario {
         }
         this.pesci = new Pesce[numeroPesci];
     }
+    public String getNome(){
+        return this.nome;
+    }
 }
