@@ -25,4 +25,7 @@ public class Pesce {
     public String getNome(){
         return this.nome;
     }
+    public String getColore(){
+        return this.colore;
+    }
 }
