@@ -4,7 +4,7 @@ public class Pesce {
     private int id;
     private String nome;
     private String colore;
-    
+
     public Pesce(int id, String nome, String colore) throws InvalidParameterException {
         if(this.id <= 0){
             this.id = id;
@@ -21,5 +21,8 @@ public class Pesce {
         } else {
             throw new InvalidParameterException("colore must can't be empty");
         }
+    }
+    public String getNome(){
+        return this.nome;
     }
 }
