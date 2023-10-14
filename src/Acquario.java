@@ -57,5 +57,8 @@ public class Acquario {
             x++;
         }
     }
+    public Object clone(){
+        return (Object) new Acquario(this.nome, this.pesci);
+    }
 
 }
