@@ -60,5 +60,11 @@ public class Acquario {
     public Object clone(){
         return (Object) new Acquario(this.nome, this.pesci);
     }
-
+    public String toString(){
+        String pesciStr = "";
+        for(int x = 0; x < this.pesci.length; x++){
+            pesciStr += ((x == 0) ? "" : ", ") + this.pesci[x].toString();
+        }
+        return "{\"nome\": \"" + this.nome + "\", \"nome\": {" + pesciStr + "}}";
+    }
 }
