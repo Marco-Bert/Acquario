@@ -28,4 +28,7 @@ public class Pesce {
     public String getColore(){
         return this.colore;
     }
+    public Object clone() throws InvalidParameterException {
+        return new Pesce(this.id, this.nome, this.colore);
+    }
 }
