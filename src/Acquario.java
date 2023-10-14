@@ -24,4 +24,12 @@ public class Acquario {
     public String getNome(){
         return this.nome;
     }
+    public Pesce[] getPesci(){
+        Pesce[] cp = new Pesce[this.pesci.length];
+        for(int x = 0; x < this.pesci.length; x++){
+            cp[x] = (Pesce) this.pesci[x].clone();
+        }
+        return cp;
+    }
+    
 }
