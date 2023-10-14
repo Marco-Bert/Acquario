@@ -48,4 +48,14 @@ public class Acquario {
         }
         return cp;
     }
+    public void setPesce(int id, String nome, String colore){
+        int x = 0, exit = 0;
+        while(exit == 0){
+            if(this.pesci[x].getId() == id){
+                this.pesci[x] = new Pesce(id, nome, colore);
+            }
+            x++;
+        }
+    }
+
 }
